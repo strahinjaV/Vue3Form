@@ -35,7 +35,7 @@
       </div>
 
       <div>
-        <BaseCheckbox v-model="event.extras.music" label="Live Music" />"
+        <BaseCheckbox v-model="event.extras.music" label="Live Music" />
       </div>
 
       <button class="button -fill-gradient" type="submit">Submit</button>
@@ -77,7 +77,16 @@ export default {
   },
   methods: {
     sendForm () {
-      // we will  handle form submission here
+      axios.post(
+        'https://my-json-server.typicode.com/strahinjaV/Vue3Form/events',
+        this.event
+      )
+        .then(function (response) {
+          console.log('Response', response)
+        })
+        .catch(function (err) {
+          console.log('Error', err)
+        })
     }
   }
 }
