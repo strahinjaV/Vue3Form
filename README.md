@@ -1,23 +1,28 @@
 # advanced-forms
 
+## Beofre doing npm install
+```
+npm install may not work because this project uses 
+```
+
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npmm serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+npm build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm lint
 ```
 
 ### Customize configuration
