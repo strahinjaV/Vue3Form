@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     sendForm () {
-      //we will  handle form submission here
+      // we will  handle form submission here
     }
   }
 }
